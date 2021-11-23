@@ -41,7 +41,7 @@ function App() {
   }
 
   const eliminarProyecto = function(id) {
-    const nuevosProyectos = lista_datos.find( (p) => p.id !== id);
+    const nuevosProyectos = lista_datos.filter( (p) => p.id !== id);
     setListaDatos(nuevosProyectos);
   }
 
